@@ -1,6 +1,6 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('budget-cache').then(function(cache) {
+    caches.open('남은돈-pocket').then(function(cache) {
       return cache.addAll(['/']);
     })
   );
